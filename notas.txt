@@ -4,8 +4,13 @@ BOOTSTRAP
 	-Especificar HTML5
 		<!DOCTYPE html>
 	-Meta charset 'viewport'
-	<meta name="viewport" 
+	<meta name="viewport"
 content="width=device-width">
-		En subl text meta:vp y tab
+		En sublimetext use-> meta:vp y tab
+
+	Además de las condiciones mencianadas antes
+	Lo mínimo necesario es usar bootstrap.min.css
+
+
 
 
