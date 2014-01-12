@@ -1,0 +1,11 @@
+BOOTSTRAP
+=========
+	Requerimientos:
+	-Especificar HTML5
+		<!DOCTYPE html>
+	-Meta charset 'viewport'
+	<meta name="viewport" 
+content="width=device-width">
+		En subl text meta:vp y tab
+
+
