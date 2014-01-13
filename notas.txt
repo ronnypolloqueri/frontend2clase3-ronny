@@ -27,3 +27,7 @@ esto en la clase del div columna, ejemplo
 </div>
 
 Estas 3 cajas se veran a tres columnas solo hasta mínimamente la resolución 'MD' si baja de esta las columnas se agruparan en FILAS.
+
+VALORES POR DEFECTO
+===================
+- Bootstrap toma el tamaño col-xs- por defecto si no lo definimos
