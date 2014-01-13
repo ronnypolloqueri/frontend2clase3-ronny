@@ -1,6 +1,16 @@
 BOOTSTRAP
 =========
-	Requerimientos:
+	Usandolo podemos hacer mockups rápidos para nuestro
+	proyecto sin preocuparnos demasiado por el
+	frontend, pero sin perder por ello un buen
+	diseño.
+
+CONSIDERACIONES
+===============
+	-Bootstrap por defecto usa normalize
+
+REQUERIMIENTOS:
+==============
 	-Especificar HTML5
 		<!DOCTYPE html>
 	-Meta charset 'viewport'
