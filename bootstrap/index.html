@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="puls4.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<img src="imagenes/logo.png" alt="Puls4" />
+	<header class="row">
+		<div class="logo col-xs-1">
+			<figure></figure>
 		</div>
-		<div class="titular">
+		<div class="titular col-xs-10">
 			<h1 class="titulo">
 				Puls4: Comunidad profesional de gente atractiva
 			</h1>
@@ -21,20 +21,19 @@
 				<a href="#" class="filtro">
 					Stylus
 				</a>
-				<a href="#" class="publicar">
+				<a href="#" class="publicar btn  btn-default pull-right">
 					Publicar
 				</a>
 			</div>
 		</div>
-		<div class="usuario">
+		<div class="usuario col-xs-1">
 			<figure class="avatar">
-				<img src="imagenes/avatar.jpg" alt="ronny">
 			</figure>
 			<a href="#" class="link"></a>
 		</div>
 	</header>
 	<nav>
-		<ul class="menu">
+		<ul class="menu nav nav-pills">
 			<li><a href="#">Python</a></li>
 			<li><a href="#">HTML5</a></li>
 			<li><a href="#">Javascript</a></li>
@@ -46,187 +45,138 @@
 			<li><a href="#">CSS3</a></li>
 		</ul>
 	</nav>
-	<section class="posts">
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
+	<section class="posts row">
+		<div class="col-sm-6">
+			<article class="post">
+				<div class="descripcion row">
+					<figure class="imagen col-xs-3">
+
+					</figure>
+					<div class="detalles col-xs-9">
+						<h2 class="titulo">
+							Modulo de usuarios: Lista y paginación con Laravel
+						</h2>
+						<p class="autor">
+							por <a href="#">Duilio Sanchez</a>
+						</p>
+						<a class="tag btn btn-default">PHP</a>
+						<p class="fecha pull-right">hace <strong>20</strong> min</p>
+					</div>
 				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
+				<div class="acciones">
+					<div class="votos pull-left">
+						<a href="#" class="up"></a>
+						<span class="total">155</span>
+						<a href="#" class="down"></a>
+					</div>
+					<div class="datos">
+						<a class="comentarios pull-right" href="#">
+							10
+						</a>
+						<a href="#" class="estrellita"></a>
+					</div>
 				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
+			</article>
+		</div>
+		<div class="col-sm-6">
+			<article class="post">
+				<div class="descripcion row">
+					<figure class="imagen col-xs-3">
+
+					</figure>
+					<div class="detalles col-xs-9">
+						<h2 class="titulo">
+							Modulo de usuarios: Lista y paginación con Laravel
+						</h2>
+						<p class="autor">
+							por <a href="#">Duilio Sanchez</a>
+						</p>
+						<a class="tag btn btn-default">PHP</a>
+						<p class="fecha pull-right">hace <strong>20</strong> min</p>
+					</div>
 				</div>
-			</div>
-		</article>
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
+				<div class="acciones">
+					<div class="votos pull-left">
+						<a href="#" class="up"></a>
+						<span class="total">155</span>
+						<a href="#" class="down"></a>
+					</div>
+					<div class="datos">
+						<a class="comentarios pull-right" href="#">
+							10
+						</a>
+						<a href="#" class="estrellita"></a>
+					</div>
 				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
+			</article>
+		</div>
+
+		<div class="col-sm-6">
+			<article class="post">
+				<div class="descripcion row">
+					<figure class="imagen col-xs-3">
+
+					</figure>
+					<div class="detalles col-xs-9">
+						<h2 class="titulo">
+							Modulo de usuarios: Lista y paginación con Laravel
+						</h2>
+						<p class="autor">
+							por <a href="#">Duilio Sanchez</a>
+						</p>
+						<a class="tag btn btn-default">PHP</a>
+						<p class="fecha pull-right">hace <strong>20</strong> min</p>
+					</div>
 				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
+				<div class="acciones">
+					<div class="votos pull-left">
+						<a href="#" class="up"></a>
+						<span class="total">155</span>
+						<a href="#" class="down"></a>
+					</div>
+					<div class="datos">
+						<a class="comentarios pull-right" href="#">
+							10
+						</a>
+						<a href="#" class="estrellita"></a>
+					</div>
 				</div>
-			</div>
-		</article>
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
+			</article>
+		</div>
+<div class="col-sm-6">
+			<article class="post">
+				<div class="descripcion row">
+					<figure class="imagen col-xs-3">
+
+					</figure>
+					<div class="detalles col-xs-9">
+						<h2 class="titulo">
+							Modulo de usuarios: Lista y paginación con Laravel
+						</h2>
+						<p class="autor">
+							por <a href="#">Duilio Sanchez</a>
+						</p>
+						<a class="tag btn btn-default">PHP</a>
+						<p class="fecha pull-right">hace <strong>20</strong> min</p>
+					</div>
 				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
+				<div class="acciones">
+					<div class="votos pull-left">
+						<a href="#" class="up"></a>
+						<span class="total">155</span>
+						<a href="#" class="down"></a>
+					</div>
+					<div class="datos">
+						<a class="comentarios pull-right" href="#">
+							10
+						</a>
+						<a href="#" class="estrellita"></a>
+					</div>
 				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
-				</div>
-			</div>
-		</article>
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
-				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
-				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
-				</div>
-			</div>
-		</article>
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
-				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
-				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
-				</div>
-			</div>
-		</article>
-		<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
-					<img src="imagenes/foto.jpg" />
-				</figure>
-				<div class="detalles">
-					<h2 class="titulo">
-						Modulo de uusarios: Lista y paginación con Laravel
-					</h2>
-					<p class="autor">
-						por <a href="#">Duilio Sanchez</a>
-					</p>
-					<a class="tag">PHP</a>
-					<p class="fecha">hace <strong>20</strong> min</p>
-				</div>
-			</div>
-			<div class="acciones">
-				<div class="votos">
-					<a href="#" class="up"></a>
-					<span class="total">155</span>
-					<a href="#" class="down"></a>
-				</div>
-				<div class="datos">
-					<a class="comentarios" href="#">
-						10
-					</a>
-					<a href="#" class="estrellita"></a>
-				</div>
-			</div>
-		</article>
+			</article>
+		</div>
+
+
 	</section>
 	<footer>
 		<h3 class="powered">

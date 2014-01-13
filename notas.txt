@@ -5,6 +5,18 @@ BOOTSTRAP
 	frontend, pero sin perder por ello un buen
 	diseño.
 
+GRILLAS
+=======
+	Son 12 columnas, y al anidar; las filas dentro de otras columnas  a su vez tambien se dividen en 12 al crear columnas dentro de ellas.
+
+CLASES
+======
+	pull-right
+		Pone el elemento a la derecha
+
+	nav nav-pills
+		como clase de ul para navegación
+
 CONSIDERACIONES
 ===============
 	-Bootstrap por defecto usa normalize
@@ -41,3 +53,9 @@ Estas 3 cajas se veran a tres columnas solo hasta mínimamente la resolución 'M
 VALORES POR DEFECTO
 ===================
 - Bootstrap toma el tamaño col-xs- por defecto si no lo definimos
+
+MOCKUPS
+=======
+Al hacer mockups podemos cambiar las etiquetas img
+por figure y darle el tamaño que deseemos con css,
+para hacer un diseño rapido.
