@@ -11,6 +11,19 @@ content="width=device-width">
 	Además de las condiciones mencianadas antes
 	Lo mínimo necesario es usar bootstrap.min.css
 
+GRILLAS en BOOTSTRAP
+====================
+Se trabaja a 12 columnas
 
+Las columnas pueden disponerse para los siguientes formatos:
 
+Desktop Large(LG), Desktop(MD), Tablet(SM), Phone(XS)
 
+esto en la clase del div columna, ejemplo
+<div class="row">
+	<div class="col-md-4"> </div>
+	<div class="col-md-4"> </div>
+	<div class="col-md-4"> </div>
+</div>
+
+Estas 3 cajas se veran a tres columnas solo hasta mínimamente la resolución 'MD' si baja de esta las columnas se agruparan en FILAS.
