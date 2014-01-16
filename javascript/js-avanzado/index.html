@@ -7,6 +7,7 @@
 	<title>Puls4: Comunidad para gente atractiva y millonaria</title>
 	<link rel="stylesheet" href="css/puls4.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<script src="jquery-2.0.3.min.js"></script>
 </head>
 <body>
 	<header>
@@ -244,19 +245,11 @@
 			alert('Bienvenida');
 		}
 		function hacerAlgoImportante(){
-			console.log('Estoy haciendo algo importante para la aplicación')
+			console.log('Estoy haciendo algo importante para la aplicación');
 		}
-		function atachar(elem, evento, funcion){
-			if (elem.addEventListener){
-				elem.addEventListener(evento, funcion);
-			}else {
-				elem.attachEvent('on'+evento, funcion);
-			}
-		}
-		atachar(window, 'load', hacerAlgoImportante);
 
-		var publicar = document.getElementsByClassName('publicar')[0]
-		atachar(publicar, 'click', darBienvenida)
+		$('.publicar').on('click', darBienvenida);
+		$(window).on('load', hacerAlgoImportante);
 	</script>
 </body>
 </html>

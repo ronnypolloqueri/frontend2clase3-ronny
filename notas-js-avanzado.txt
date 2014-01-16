@@ -48,8 +48,13 @@ Mas reducido
 	atachar(window, 'load', hacerAlgoImportante);
 	atachar(window, 'load', darBienvenida);
 </script>
-Luego aparececería jQuery
+Luego aparececería jQuery,entonces las cosas podrian hacerce así:
 
+
+<script>
+$('.publicar').on('click', darBienvenida);
+$(window).on('load', hacerAlgoImportante);
+</script>
 jQuery
 ======
 	- Una plataforma
@@ -61,4 +66,8 @@ jQuery
 	- Cross-Browser: funcionará con cualquier navegador
 	- CSS3 Compliant: soporta css3 desde mucho antes que los navegadores.
 
+Instalar
+========
+	- Descargar desde url: jquery.com
+	- Agregar <script src="jquery-2.0.3.min.js"></script>
 <script></script>
