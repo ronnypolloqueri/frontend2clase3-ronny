@@ -1,0 +1,64 @@
+Aqui la forma tradicional con javascript puro
+Notar que tenía que comtemplar la diferencia entre navegadores.
+
+<script>
+
+	window.onload = function(){
+		alert('Esto es algo muy imporatnte')
+	}
+
+	window.onload = function(){
+		alert("Bienvenido")
+	}
+</script>
+
+Si hacemos 2 alerts, el último pisará al anterior
+
+Si se cumple que el objeto windows tiene el addEventListener
+entonces lo llamamos,
+SINO (estamos en IE, tenemos que hacerlo diferente :( )
+
+
+<script>
+	function darBienvenida(){
+		alert('Bienvenida');
+	}
+	function hacerAlgoImportante(){
+		console.log('Estoy haciendo algo importante para la aplicación')
+	}
+	if (window.addEventListener){
+		window.addEventListener('load', hacerAlgoImportante);
+		window.addEventListener('load', darBienvenida);
+	}else {
+		window.attachEvent('onload', hacerAlgoImportante);
+		window.attachEvent('onload', darBienvenida);
+	}
+
+</script>
+Mas reducido
+<script>
+	function atachar(elem, evento, funcion){
+		if (elem.addEventListener){
+			elem.addEventListener(evento, funcion);
+		}else {
+			elem.attachEvent('on'+evento, funcion);
+		}
+	}
+
+	atachar(window, 'load', hacerAlgoImportante);
+	atachar(window, 'load', darBienvenida);
+</script>
+Luego aparececería jQuery
+
+jQuery
+======
+	- Una plataforma
+	- Nos independizaba de los navegadores
+	- Podías utilizar APIS ( Aplication Programming Interface)
+		Crear una nueva interface sería lo que hicimos antes con atachar.
+	- url: jquery
+	- Codigo liviano, ahora ya no es tanto así
+	- Cross-Browser: funcionará con cualquier navegador
+	- CSS3 Compliant: soporta css3 desde mucho antes que los navegadores.
+
+<script></script>
