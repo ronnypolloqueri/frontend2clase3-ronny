@@ -71,3 +71,58 @@ Instalar
 	- Descargar desde url: jquery.com
 	- Agregar <script src="jquery-2.0.3.min.js"></script>
 <script></script>
+
+DOM : Document Object Model
+===
+Todos los elementos dentro de una página web, en javascript
+son objetos, no sólo tienen atributos, sino que tienen tambien
+eventos a los cuales nos podemos enganchar.
+
+Funciones:
+=========
+
+	Anónimas:
+
+		$('.publicar').on('click', function(){
+			alert('Bienvenido!');
+		});
+
+	La diferencia con una función NOMBRADA
+	sería que con una función NOMBRADA, la podemos quitar con
+
+	OFF:
+
+		$('.publicar')on('click', darBienvenida);
+		$('.publicar')off('click', darBienvenida);
+
+
+Eventos :
+=======
+
+onload, del objeto windows, sólo se dispara cuando se cargó TODO)css,js, todas las imagenes), por ello conviene usar otro evento:
+
+document.content.load => Se dispará cuando sólo se cargo el html, y se armó el árbol de DOM.
+
+<script>
+
+	//$(window).on('load', hacerAlgoImportante);
+	$(hacerAlgoImportante);
+</script>
+
+PROYECTOS DERIVADOS DE jQuery:
+=============================
+
+JQueryUI:
+========
+	- Creo objetos ya armados ( calendarios, ) usando jQuery Mobile.
+	- Tambien preparados para que tengan distintas presentaciones con sus templates
+	- Luego se pensó en hacer jQuery mobile, donde se agregan y quitan características
+	  para especializarlo.
+
+QUnit: TEST PROGRAMÁTICOS
+=====
+	- Si tenemos test funcionales, podemos hacer test programáticos
+
+Sizzle: Motor interno, que tiene jQuery para hacer la captura de elementos.
+======
+

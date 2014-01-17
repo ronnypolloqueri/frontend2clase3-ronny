@@ -249,6 +249,14 @@
 		}
 
 		$('.publicar').on('click', darBienvenida);
+		$('.publicar').off('click', darBienvenida);
+
+		// con funcion anónima
+		$('.publicar').on('click', function(){
+			alert('Bienvenido!');
+		});
+
+		$(hacerAlgoImportante);
 		$(window).on('load', hacerAlgoImportante);
 	</script>
 </body>
