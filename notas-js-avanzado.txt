@@ -104,6 +104,24 @@ Funciones:
 
 	$('form').slideToggle();
 		Aparece y desaparece el formulario según su estado
+
+	$('input[name=titulo]').val();
+		Recupera el valor de un elemento del form
+
+	$('section.posts').prepend('<aqui el texto o html>')
+		Inserta al inicio
+	$('section.posts').append('<aqui el texto o html>')
+		Inserta al Final
+
+
+!!BUSCAR: La forma de copiar varias lineas en javascript
+		  prigazzi usaba un "\"" al final de cada línea, pero no le salió.
+
+	$('form input[type=text]').val('');
+		Limpia los inputs de un formulario.
+
+	$('form').slideUp();
+		Oculta un formulario
 Eventos :
 =======
 
@@ -116,6 +134,17 @@ document.content.load => Se dispará cuando sólo se cargo el html, y se armó e
 	//$(window).on('load', hacerAlgoImportante);
 	$(hacerAlgoImportante);
 </script>
+
+En una función un evento se recibe usando un parametro en la función.
+
+	<script>
+		function procesarForm(e){
+		}
+		$('form').on('submit', procesarForm);
+	</script>
+
+	e.preventDefault(); => Evita que se ejecute el evento, también
+						   se usa en hipervínculos
 
 PROYECTOS DERIVADOS DE jQuery:
 =============================
