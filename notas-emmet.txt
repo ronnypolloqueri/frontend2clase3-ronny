@@ -1,0 +1,6 @@
+Ejemplos de Rigazzi
+===================
+p>label>{Nombre}+^input
+<p><label for="">Nombre</label><input type="text"></p>
+p>label>{Nombre}+input
+<p><label for="">Nombre<input type="text"></label></p>
