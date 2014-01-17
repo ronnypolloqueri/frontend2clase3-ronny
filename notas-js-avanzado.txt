@@ -96,6 +96,14 @@ Funciones:
 		$('.publicar')off('click', darBienvenida);
 
 
+	$('form').css('display', 'block');
+		Cambia el valor de una propiedad css
+
+	$('form').slideDown();
+		Aparece el formulario como un slide.
+
+	$('form').slideToggle();
+		Aparece y desaparece el formulario según su estado
 Eventos :
 =======
 

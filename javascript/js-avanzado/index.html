@@ -47,6 +47,13 @@
 			<li><a href="#">CSS3</a></li>
 		</ul>
 	</nav>
+	<form action="">
+		<p><label for="titulo">Título</label><input name="titulo" type="text"></p>
+		<p><label for="autor">Autor</label><input name='autor' type="text"></p>
+		<p><label for="tag">Tag</label><input name='tag' type="text"></p>
+		<p><label for="imagen">Imagen</label><input name='imagen' type="file"></p>
+		<input type="submit" value="Publicar">
+	</form>
 	<section class="posts">
 		<article class="post">
 			<div class="descripcion">
@@ -241,23 +248,13 @@
 	</footer>
 
 	<script>
-		function darBienvenida(){
-			alert('Bienvenida');
-		}
-		function hacerAlgoImportante(){
-			console.log('Estoy haciendo algo importante para la aplicación');
-		}
-
-		$('.publicar').on('click', darBienvenida);
-		$('.publicar').off('click', darBienvenida);
-
-		// con funcion anónima
-		$('.publicar').on('click', function(){
-			alert('Bienvenido!');
-		});
-
-		$(hacerAlgoImportante);
-		$(window).on('load', hacerAlgoImportante);
+		$(function(){
+			$('.publicar').on('click', function(){
+				// $('form').css('display', 'block');
+				// $('form').slideDown();
+				$('form').slideToggle();
+			})
+		})
 	</script>
 </body>
 </html>
